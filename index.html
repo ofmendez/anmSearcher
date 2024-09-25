@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Comparador Expedientes ANM</title>
+
+      <link rel="stylesheet" href="CSS/stylesheet.css">
+
+      <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+      <meta name="view-transition" content="same-origin" />
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+    </head>
+    <body>
+        <div class="ContenedorGeneral">
+            <div class="ContenedorCentrado">
+                <div class="LogoSuperior">
+                    <img src="Images/RicaurteLogo.jpg" />
+                </div>
+                <div class="ContenedorBotonesPestanas">
+                    <button class="BotonPestana" onclick="abrirPestana(event, 'ConsultaTab')" id="defaultOpen">CONSULTA</button>
+                    <button class="BotonPestana" onclick="abrirPestana(event, 'AgregarExpedienteTab')">AGREGAR EXPEDIENTE</button>
+                </div>
+
+                <div id="ConsultaTab" class="ConsultarExpedientes ContenedorPestana">
+                    <p>Selecciona el día en el que quieres realizar la comparación con los expedientes de la Agencia Nacional de Minería</p>
+                    <form class="FormaInputDatos">
+                        <div class="ContenedorForma">
+                            <div>
+                                <p>Fecha:</p>
+                                <input type="date" id="FechaConsulta" name="FechaConsulta">
+                            </div>
+                            <div>
+                                <input type="submit" value="Consultar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="AgregarExpedienteTab" class="AgregarExpedientes ContenedorPestana">
+                    <p>Para agregar un nuevo expediente a la base de datos ingresa los datos a continuación</p>
+                    <form class="FormaInputDatos">
+                        <div class="ContenedorForma">
+                            <div>
+                                <p>Expediente*:</p>
+                                <input type="text" id="NumeroExpediente" name="NumeroExpediente" required>
+                            </div>
+                            <div>
+                                <p>Placa:</p>
+                                <input type="text" id="NumeroPlaca" name="NumeroPlaca">
+                            </div>
+                            <div>
+                                <input type="submit" value="Agregar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="SeparadorFinal"> </div>
+            </div>
+        </div>
+        <div class="Footer">
+            © Ricaurte Rueda Abogados 2024
+        </div>
+
+        <script src="JS/pestanas.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --ColorGrisClaro: #f1f1f1;
+    --ColorGrisOscuro: #818181;
+    --ColorAzulOscuro: #0e3a5e;
+    --ColorAzulClaro: #9aa9b4;
+    --ColorBlanco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-size:15px;
+}
+
+body{
+    background-color: var(--ColorGrisClaro);
+}
+
+.ContenedorGeneral{
+    display: flex;
+    justify-content: center;
+    width:100svw;
+    height:100svh;
+    overflow-x: hidden;
+}
+
+.ContenedorCentrado{
+    width: 60%;
+    min-width: 400px;
+    max-width:500px;
+    text-align: center;
+    padding-top:15svh;
+}
+
+/* Inicio Elementos Páginas */
+
+    .LogoSuperior{
+        padding-bottom:40px;
+    }
+
+    .SeparadorFinal{
+        height:25svh;
+    }
+
+    .Footer{
+        background-color: var(--ColorAzulOscuro);
+        color: var(--ColorGrisClaro);
+        position: fixed;
+        bottom:0;
+        width: 100svw;
+        text-align: center;
+        padding:20px 0;
+        font-size: 14px;
+    }
+
+/* Fin Elementos Páginas */
+
+/* ---------- INICIO CONFIGURACIÓN PAGINA INDEX ---------- */
+
+    /* Inicio Configuracion Pestañas */
+
+        .ContenedorBotonesPestanas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 30px;
+        }
+
+        .BotonPestana{
+            background-color: transparent;
+            border:0 solid transparent;
+            color: var(--ColorAzulClaro);
+            font-size: 15px;
+        }
+
+        .BotonPestana.active{
+            font-weight: 800;
+            color: var(--ColorAzulOscuro);
+        }
+
+        .ContenedorPestana{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            padding-top:20px;
+        }
+
+    /* Fin Configuracion Pestañas */
+
+    /* Inicio Configuracion Formas */
+
+        .ContenedorForma{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding-top:20px;
+        }
+
+        .ContenedorForma div{
+            width:100%;
+        }
+
+        .FormaInputDatos input{
+            padding:10px 20px;
+            margin-top:8px;
+            border-radius: 10px;
+            border: 1px solid var(--ColorGrisOscuro);
+        }
+
+        .FormaInputDatos input[type="submit"]{
+            background-color: var(--ColorAzulOscuro);
+            color: var(--ColorGrisClaro);
+            padding:10px 30px;
+            border: solid 0 transparent;
+            border-radius: 30px;
+        }
+
+    /* Fin Configuracion Formas */
+
+/* ---------- FIN CONFIGURACIÓN PAGINA INDEX ---------- */
+
+/* ---------- INICIO CONFIGURACIÓN PAGINA RESULTADOS ---------- */
+
+    .Resultados{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .TablaResultados{
+        background-color: var(--ColorBlanco);
+        border: 1px solid var(--ColorGrisOscuro);
+        border-radius: 10px;
+        color: var(--ColorGrisOscuro);
+        margin: 0 auto;
+        margin-top:10px;
+        width: fit-content;
+        min-width: 260px;
+    }
+
+    .TablaResultados tr td{
+        padding:5px;
+        border-bottom: 1px solid var(--ColorGrisOscuro);
+    }
+
+    .TablaResultados tr:last-child td{
+        border-bottom: none;
+    }
+
+    .BotonNuevaConsulta{
+        background-color: var(--ColorAzulOscuro);
+        color: var(--ColorGrisClaro);
+        padding:10px 30px;
+        border: solid 0 transparent;
+        border-radius: 30px;
+        margin:0 auto;
+        margin-top:20px;
+        width:fit-content;
+        cursor:pointer;
+    }
+
+
+/* ---------- FIN CONFIGURACIÓN PAGINA RESULTADOS ---------- */
