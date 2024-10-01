@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Comparador Expedientes ANM</title>
 
-      <link rel="stylesheet" href="CSS/stylesheet.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comparador Expedientes ANM</title>
 
-      <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
-      <meta name="view-transition" content="same-origin" />
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
-    </head>
-    <body>
-        <div class="ContenedorGeneral">
-            <div class="ContenedorCentrado">
-                <div class="LogoSuperior">
-                    <img src="Images/RicaurteLogo.jpg" />
-                </div>
-                <div class="Resultados">
-                    Expedientes con coincidencias:
-                    <table class="TablaResultados">
-                        <tr>
-                            <td>
-                                <p>Resultado 01</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Resultado 02</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Resultado 03</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <a href="/index.html">
-                        <button class="BotonNuevaConsulta">NUEVA CONSULTA</button>
-                    </a>
-                </div>
-                <div class="SeparadorFinal"> </div>
-            </div>
-        </div>
-        <div class="Footer">
-            © Ricaurte Rueda Abogados 2024
-        </div>
+	<link rel="stylesheet" href="./css/stylesheet.css">
 
-        <script src="JS/pestanas.js"></script>
+	<link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+	<meta name="view-transition" content="same-origin" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<script src="./js/results.js" type="module"></script>
 
-    </body>
+</head>
+
+<body>
+	<div class="ContenedorGeneral">
+		<div class="ContenedorCentrado">
+			<div class="LogoSuperior">
+				<img src="Images/RicaurteLogo.jpg" />
+			</div>
+			<div class="Resultados">
+				Expedientes con coincidencias:
+				<br>
+				<br>
+				<br>
+				<h3> Número Expediente</h3>
+				<table class="TablaResultados" id="resultRecordNumbers">
+					<!-- <tr>
+						<td>
+							<p>Resultado 01</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Resultado 02</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Resultado 03</p>
+						</td>
+					</tr> -->
+				</table>
+				<br>
+				<br>
+				<br>
+				<h3> Placa</h3>
+				<table class="TablaResultados" id="resultLicences">
+				</table>
+
+				<button id="goBack" class="BotonNuevaConsulta">NUEVA CONSULTA</button>
+			</div>
+			<div class="SeparadorFinal"> </div>
+		</div>
+	</div>
+	<div class="Footer">
+		© Ricaurte Rueda Abogados 2024
+	</div>
+
+
+</body>
+
 </html>
