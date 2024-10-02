@@ -31,7 +31,6 @@ body{
 .ContenedorCentrado{
     width: 60%;
     min-width: 400px;
-    max-width:500px;
     text-align: center;
     padding-top:15svh;
 }
@@ -106,7 +105,10 @@ body{
         }
 
         .FormaInputDatos textarea{
-				height: 30vh;
+			height: 20svh;
+            width:40svw;
+            min-width:200px;
+            max-width:400px;
             padding:10px 20px;
             margin-top:8px;
             border-radius: 10px;
@@ -142,11 +144,17 @@ body{
         margin: 0 auto;
         margin-top:10px;
         width: fit-content;
-        min-width: 260px;
+        min-width: 300px;
+        padding: 6px;
+    }
+
+    .TablaResultados th {
+        min-width: 160px;
+        padding: 6px 0;
     }
 
     .TablaResultados tr td{
-        padding:5px;
+        padding:6px;
         border-bottom: 1px solid var(--ColorGrisOscuro);
     }
 

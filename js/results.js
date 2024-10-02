@@ -13,7 +13,7 @@ function LoadLicences() {
 	if (found == null) {
 		return;
 	}
-	table.innerHTML = '<tr><th>Placa</th><th>Fecha</th><th>Número</th><th>Punto de atención</th></tr>';
+	table.innerHTML = '<tr><th>Placa</th><th>Fecha</th><th>Expediente</th><th>Punto de atención</th></tr>';
 	found.map((record) => {
 		record.dateLine.forEach((line) => {
 			const row = table.insertRow();
@@ -35,7 +35,7 @@ function LoadRecordNumbers() {
 	if (found == null) {
 		return;
 	}
-	table.innerHTML = '<tr><th>Número</th><th>Fecha</th><th>Placa</th><th>Punto de atención</th></tr>';
+	table.innerHTML = '<tr><th>Expediente</th><th>Fecha</th><th>Placa</th><th>Punto de atención</th></tr>';
 	found.map((record) => {
 		record.dateLine.forEach((line) => {
 			const row = table.insertRow();
