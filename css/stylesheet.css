@@ -86,7 +86,7 @@ body{
             display:flex;
             flex-direction: column;
             align-items: center;
-            display: none;
+            /* display: none; */
             padding-top:20px;
         }
 
